@@ -107,7 +107,7 @@ aud_pagos.nroFact = New.nrofact,
 aud_pagos.monto = New.monto,
 aud_pagos.usuario = user(),
 aud_pagos.fecha =  CURDATE(),
-aud_pagos.operacion = 'Insercion en pago'
+aud_pagos.operacion = 'Insercion'
 ;
 END //
 DELIMITER ;
@@ -116,3 +116,4 @@ drop trigger despues_insercion_Aud_pago;
 
 select * from aud_pagos;
 INSERT INTO pago (nroPago, nrofact, monto) values (19,10,100.00);
+INSERT INTO pago (nroPago, nrofact, monto) values (29,10,160.00);
